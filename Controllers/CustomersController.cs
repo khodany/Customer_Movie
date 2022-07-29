@@ -17,7 +17,7 @@ namespace Customer_Movie.Controllers
             _customer = new CustomerRepository(new ApplicationDbContext());
         }
 
-        public ActionResult New()//
+        public ActionResult New()
         {
             var membershipTypes = _customer.GetMemberShipType();
             var viewModel = new CustomerFormViewModel
