@@ -77,7 +77,7 @@ namespace Customer_Movie.Controllers
             var viewModel = new CustomerFormViewModel
             {
                 Customer = customer,
-                MembershipTypes = _customer.GetMemberShipType()
+                MembershipTypes = _customer.GetMemberShipType()//
             };
 
             return View("CustomerForm", viewModel);
